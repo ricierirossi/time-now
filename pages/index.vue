@@ -1,14 +1,18 @@
 <template>
   <div>
-    <div class="section-1">
-      <h2>Post when your audience is most active.</h2>
-      <p>
+    <div class="section-1 p-2">
+      <h2 class="text-night font-xl mb-1">
+        Post when your audience is most active.
+      </h2>
+      <p class="text-overcast font-md mb-1">
         With TimeNow, automatically schedule your post on Twitter, LinkedIn, and
         Instagram to post when your followers are most active.
       </p>
-      <BlueButton buttonLabel="Start Scheduling" />
-      <p>View Demo</p>
-      <div>
+      <div class="display-f mb-1">
+        <MyButton class="bt-blue" buttonLabel="Start Scheduling" />
+        <MyButton class="bt-white" buttonLabel="View Demo" />
+      </div>
+      <div class="display-f">
         <svg
           width="18"
           height="24"
@@ -23,53 +27,60 @@
             fill="#049372"
           />
         </svg>
-        <p>TimeNow does not sell your data.</p>
-        <p>Learn more</p>
+        <div class="text-overcast ml-1">
+          <p>TimeNow does not sell your data.</p>
+          <p class="weight-700" style="text-decoration: underline">
+            Learn more
+          </p>
+        </div>
       </div>
     </div>
-    <div class="section-2">
+    <div class="section-2 p-2 bg-sky display-f jc-c">
       <img
         src="images/Mockup.png"
         alt="Analytics example"
-        width="100"
-        height="100"
+        width="300"
+        height="300"
       />
     </div>
-    <div class="section-3">
-      <h2>TimeNow is used by the most influential people.</h2>
-      <div>
-        <PersonPicture personNumber="1" />
-        <PersonPicture personNumber="2" />
-        <PersonPicture personNumber="3" />
-        <PersonPicture personNumber="4" />
-        <PersonPicture personNumber="5" />
-        <PersonPicture personNumber="6" />
-        <PersonPicture personNumber="7" />
-        <PersonPicture personNumber="8" />
+    <div class="section-3 p-2">
+      <h2 class="text-night font-xl">
+        TimeNow is used by the most influential people.
+      </h2>
+      <div class="display-f wrap-wrap cg-10 rg-5">
+        <span v-for="n in 8">
+          <PersonPicture :personNumber="n" />
+        </span>
       </div>
-      <p>
+      <p class="text-overcast">
         The most influential people on Facebook, Twitterm and Instagram are
         using TweetNow to schedule post when their followers are most active.
       </p>
-      <p>They generally receive 23% more engagement than people who do not.</p>
+      <p class="text-overcast">
+        They generally receive 23% more engagement than people who do not.
+      </p>
     </div>
-    <div class="section-4">
-      <h3>Unified Dashboard</h3>
-      <h2>Customizable dashboards for all platforms.</h2>
-      <p>
-        Use Twitter and Instagram but not LinkedIn? You can customiza your
+    <div class="section-4 p-2 bg-pool">
+      <h3 class="text-sea">Unified Dashboard</h3>
+      <h2 class="text-overcast font-xl">
+        Customizable dashboards for all platforms.
+      </h2>
+      <p class="text-overcast">
+        Use Twitter and Instagram but not LinkedIn? You can customize your
         dashboard to your liking. You can even schedule the same post to
         individual platforms instead all platforms.
       </p>
-      <BlueButton buttonLabel="Start Scheduling" />
-      <h3>Enchanced Analytics</h3>
-      <h2>Real-time data that tells you everything.</h2>
-      <p>
+      <MyButton class="bt-blue" buttonLabel="Start Scheduling" />
+      <h3 class="text-sea">Enchanced Analytics</h3>
+      <h2 class="text-overcast font-xl">
+        Real-time data that tells you everything.
+      </h2>
+      <p class="text-overcast">
         Get detailed reports of what's working and what's isn't. Egagement
         rates, impressions, views, and much more data is available to you
         through our in-depth dashboard tool.
       </p>
-      <p>View Live Demo →</p>
+      <MyButton class="bt-white" buttonLabel="View Live Demo ➔" />
     </div>
   </div>
 </template>

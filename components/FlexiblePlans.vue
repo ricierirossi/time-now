@@ -68,7 +68,7 @@
         <span>Real-time Analytics</span>
       </div>
     </div>
-    <BlueButton buttonLabel="Subscribe Now" />
+    <MyButton buttonLabel="Subscribe Now" />
   </div>
 </template>
 

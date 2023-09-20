@@ -22,3 +22,5 @@ logs
 .env
 .env.*
 !.env.example
+
+assets/blue-wave/css/index.css

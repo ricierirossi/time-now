@@ -1,6 +1,6 @@
 <template>
   <div class="people">
-    <img :src="source" alt="person" width="100" height="100" />
+    <img :src="source" alt="person" width="44" height="44" />
   </div>
 </template>
 

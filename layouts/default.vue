@@ -77,7 +77,7 @@
       <span>Try XNow</span>
       <div>
         <input type="email" placeholder="Email Address" />
-        <StartScheduling />
+        <MyButton class="bt-blue" buttonLabel="Start Scheduling" />
       </div>
     </div>
   </footer>
@@ -85,4 +85,6 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style>
+@import url("assets/blue-wave/css/index.css");
+</style>
