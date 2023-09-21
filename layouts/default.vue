@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="display-f jc-sb p-2">
     <NuxtLink to="/">
       <svg
         width="24"
@@ -24,6 +24,7 @@
       xmlns="http://www.w3.org/2000/svg"
       role="graphics-symbol"
       aria-labelledby="menu"
+      class="cursor-hover"
     >
       <path
         d="M24 4H0V0H24V4ZM24 8H0V12H24V8ZM24 16H0V20H24V16Z"
@@ -32,7 +33,7 @@
     </svg>
   </nav>
   <slot />
-  <footer>
+  <footer class="p-2">
     <NuxtLink to="/">
       <svg
         width="24"
@@ -42,6 +43,7 @@
         xmlns="http://www.w3.org/2000/svg"
         role="graphics-symbol"
         aria-labelledby="logo"
+        class="mt-1 mb-2"
       >
         <path
           d="M18.009 12.3886C16.238 14.7966 13.61 17.1716 10.65 16.7846C9.849 17.9036 8.955 19.4666 7.962 21.2806L5.666 22.0006C7.609 18.2106 10.203 14.0196 12.986 10.8346C11.781 11.6196 9.801 13.3076 8.078 15.0876C6.524 11.8416 8.163 8.83461 10.536 6.53961C10.469 7.62061 10.949 8.60761 11.308 9.11461C11.246 8.21061 11.352 6.59461 12.012 5.19461C13.335 4.07861 14.504 3.27461 15.841 2.57261C15.624 3.36361 15.808 4.31161 16.063 4.90361C16.179 4.08361 16.666 2.53561 17.23 1.89361C18.897 0.818614 21.365 -0.0423855 24 0.00161449C23.709 1.62461 22.857 4.25961 21.706 5.89461C20.777 6.49161 19.549 6.84061 18.569 7.00961C19.38 7.23761 20.288 7.30262 21.078 7.24462C20.503 8.45162 19.921 9.55561 19.039 10.9106C17.823 11.5896 16.269 11.8886 15.207 11.9456C15.95 12.3346 17.304 12.5626 18.009 12.3886ZM4 21.0006H0V22.0006H4V21.0006Z"
@@ -49,33 +51,35 @@
         />
       </svg>
     </NuxtLink>
-    <div>
-      <span>Product</span>
-      <ul>
-        <NuxtLink to="/"><li>Homepage</li></NuxtLink>
-        <NuxtLink to="/pricing"><li>Pricing</li></NuxtLink>
-        <NuxtLink to="#"><li>Features</li></NuxtLink>
-      </ul>
+    <div class="display-f cg-100 wrap-wrap">
+      <div class="mb-2">
+        <div class="weight-900 mb-1">Product</div>
+        <ul class="display-f direction-col rg-10">
+          <NuxtLink to="/"><li>Homepage</li></NuxtLink>
+          <NuxtLink to="/pricing"><li>Pricing</li></NuxtLink>
+          <NuxtLink to="#"><li>Features</li></NuxtLink>
+        </ul>
+      </div>
+      <div class="mb-2">
+        <div class="weight-900 mb-1">Help</div>
+        <ul class="display-f direction-col rg-10">
+          <NuxtLink to="#"><li>Live Chat</li></NuxtLink>
+          <NuxtLink to="#"><li>Send Email</li></NuxtLink>
+          <NuxtLink to="#"><li>FAQ</li></NuxtLink>
+        </ul>
+      </div>
+      <div class="mb-2">
+        <div class="weight-900 mb-1">Company</div>
+        <ul class="display-f direction-col rg-10">
+          <NuxtLink to="#"><li>About</li></NuxtLink>
+          <NuxtLink to="#"><li>Customers</li></NuxtLink>
+          <NuxtLink to="#"><li>Blog</li></NuxtLink>
+        </ul>
+      </div>
     </div>
-    <div>
-      <span>Help</span>
-      <ul>
-        <NuxtLink to="#"><li>Live Chat</li></NuxtLink>
-        <NuxtLink to="#"><li>Send Email</li></NuxtLink>
-        <NuxtLink to="#"><li>FAQ</li></NuxtLink>
-      </ul>
-    </div>
-    <div>
-      <span>Company</span>
-      <ul>
-        <NuxtLink to="#"><li>About</li></NuxtLink>
-        <NuxtLink to="#"><li>Customers</li></NuxtLink>
-        <NuxtLink to="#"><li>Blog</li></NuxtLink>
-      </ul>
-    </div>
-    <div>
-      <span>Try XNow</span>
-      <div>
+    <div class="mb-2">
+      <div class="weight-900 mb-1">Try XNow</div>
+      <div class="display-f border-overcast border-radius-5 p-small pl-1 jc-sb">
         <input type="email" placeholder="Email Address" />
         <MyButton class="bt-blue" buttonLabel="Start Scheduling" />
       </div>

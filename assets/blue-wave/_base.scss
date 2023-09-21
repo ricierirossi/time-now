@@ -25,3 +25,13 @@ input {
 p {
   text-align: justify;
 }
+
+li {
+  all: unset;
+}
+
+.cursor-hover {
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -3,6 +3,7 @@ $utilities: (
     "prefix": "p",
     "values": (
       "0": 0,
+      "small": $base-padding * 0.3,
       "1": $base-padding,
       "2": $base-padding * 2,
       "3": $base-padding * 4,
@@ -140,12 +141,20 @@ $utilities: (
       "i-b": inline-block,
     ),
   ),
+  "flex-direction": (
+    "prefix": "direction",
+    "values": (
+      "row": row,
+      "col": column,
+    ),
+  ),
   "justify-content": (
     "prefix": "jc",
     "values": (
       "fe": flex-end,
       "fs": flex-start,
       "c": center,
+      "sb": space-between,
     ),
   ),
   "flex-wrap": (
@@ -163,6 +172,7 @@ $utilities: (
       "10": 10px,
       "20": 20px,
       "30": 30px,
+      "100": 100px,
     ),
   ),
   "row-gap": (
@@ -172,6 +182,22 @@ $utilities: (
       "10": 10px,
       "20": 20px,
       "30": 30px,
+      "100": 100px,
+    ),
+  ),
+  "border": (
+    "prefix": "border",
+    "values": (
+      "overcast": solid 1px $overcast,
+      "lead": solid 1px $lead,
+    ),
+  ),
+  "border-radius": (
+    "prefix": "border-radius",
+    "values": (
+      "5": 5px,
+      "8": 8px,
+      "10": 10px,
     ),
   ),
 );
