@@ -5,14 +5,18 @@ $sky: #46ccde;
 $pool: #cdf9ff;
 $lead: #005661;
 $overcast: #425466;
+$ash: #9ea0a1;
+$black: #000000;
+$white: #ffffff;
 
 $colors: (
-  "night": #1d1b67,
-  "sea": #3b60bf,
-  "sky": #46ccde,
-  "pool": #cdf9ff,
-  "lead": #005661,
-  "overcast": #425466,
+    "night": $night,
+    "sea": $sea,
+    "sky": $sky,
+    "pool": $pool,
+    "lead": $lead,
+    "overcast": $overcast,
+    "black": $black,
 );
 
 // Spacing

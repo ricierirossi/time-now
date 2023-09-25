@@ -157,6 +157,15 @@ $utilities: (
       "sb": space-between,
     ),
   ),
+  "align-items": (
+    "prefix": "ai",
+    "values": (
+      "fe": flex-end,
+      "fs": flex-start,
+      "c": center,
+      "sb": space-between,
+    ),
+  ),
   "flex-wrap": (
     "prefix": "wrap",
     "values": (
@@ -189,7 +198,7 @@ $utilities: (
     "prefix": "border",
     "values": (
       "overcast": solid 1px $overcast,
-      "lead": solid 1px $lead,
+      "ash": solid 1px $ash,
     ),
   ),
   "border-radius": (
@@ -198,6 +207,15 @@ $utilities: (
       "5": 5px,
       "8": 8px,
       "10": 10px,
+    ),
+  ),
+  "text-align": (
+    "prefix": "text-align",
+    "values": (
+      "end": end,
+      "start": start,
+      "center": center,
+      "justify": justify,
     ),
   ),
 );

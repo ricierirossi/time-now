@@ -1,5 +1,3 @@
-@use "sass:map";
-
 @mixin base-button {
   display: flex;
   justify-content: center;
@@ -19,6 +17,10 @@
   @include base-button;
   color: white;
   background-color: map-get($colors, "night");
+
+  &.bt-blue-big {
+    width: auto;
+  }
 }
 .bt-white {
   @include base-button;
