@@ -15,25 +15,27 @@
                 <span :class="{ selected: !isSelected }">Billed Yearly</span>
             </div>
 
-            <FlexiblePlans
-                value="4"
-                :description="description[0]"
-                :socialNetworks="[true, true, false, true]"
-                class="border-ash border-radius-5 p-2 mb-2"
-            />
+            <div class="md-row wrap-wrap jc-sb">
+                <FlexiblePlans
+                    value="4"
+                    :description="description[0]"
+                    :socialNetworks="[true, true, false, true]"
+                    class="border-ash border-radius-5 p-2 mb-2 md-width-40"
+                />
 
-            <FlexiblePlans
-                value="12"
-                :description="description[1]"
-                :socialNetworks="[true, true, true, true]"
-                class="border-ash border-radius-5 p-2 mb-2"
-            />
-            <FlexiblePlans
-                value="7"
-                :description="description[0]"
-                :socialNetworks="[true, true, false, false]"
-                class="border-ash border-radius-5 p-2"
-            />
+                <FlexiblePlans
+                    value="12"
+                    :description="description[1]"
+                    :socialNetworks="[true, true, true, true]"
+                    class="border-ash border-radius-5 p-2 mb-2 md-width-40"
+                />
+                <FlexiblePlans
+                    value="7"
+                    :description="description[0]"
+                    :socialNetworks="[true, true, false, false]"
+                    class="border-ash border-radius-5 p-2 md-width-40"
+                />
+            </div>
         </div>
     </div>
 </template>

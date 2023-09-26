@@ -1,0 +1,22 @@
+$grid-columns: 2;
+
+@include md {
+    .md-row {
+        display: flex;
+    }
+    .md-col {
+        display: flex;
+        flex-direction: column;
+    }
+    .md-m-0 {
+        margin-top: 0;
+    }
+
+    .md-width-70 {
+        width: 70%;
+    }
+
+    .md-width-40 {
+        width: 40%;
+    }
+}
