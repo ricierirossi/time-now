@@ -42,7 +42,7 @@
             </div>
             <div class="section-2 p-2 bg-sky display-f direction-col jc-c">
                 <img
-                    src="images/Mockup.png"
+                    src="/images/Mockup.png"
                     alt="Analytics example"
                     width="300"
                     height="300"
